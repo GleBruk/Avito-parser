@@ -7,10 +7,6 @@ use thiagoalessio\TesseractOCR\TesseractOCR;
 class AvitoContact{
     function __construct() {
         $this->curl = new Curl;
-        $this->offxetX = 13;
-        $this->offxetY = 6;
-        $this->whitePixel = 2147483647;
-        $this->offxetL = 2;
     }
 
     public function getPhoneUrl($itemId){

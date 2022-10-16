@@ -1,5 +1,4 @@
 <?php
-
 require_once 'app/controllers/Curl.php';
 require_once 'app/controllers/AvitoContact.php';
 require_once 'vendor/autoload.php';
@@ -8,7 +7,6 @@ use DiDom\Document;
 class Avito extends Controller {
 
     public $loadCard;
-    public $loadStat;
 
     function __construct() {
         $this->curl = new Curl;
@@ -20,7 +18,6 @@ class Avito extends Controller {
 
     public function parse(){
         $this->loadCard = $_POST['load-card'];
-        $this->loadStat = $_POST['load-stat'];
         $this->curl->sleepMin = $_POST['sleep_min'];
         $this->curl->sleepMax = $_POST['sleep_max'];
 
