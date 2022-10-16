@@ -93,20 +93,15 @@ function POST($key, $default='')
 <tr>
     <th>Название</th>
     <th>Стоимость товара</th>
-    <th>Дата публикации</th>
-    <th>Карточка</th>
     <th>Телефон</th>
 </tr>
 <?php
 foreach ($data as $k => $row) {
     ?>
     <tr>
-        <td><a href="<?=$row['url']?>" target="_blank"><?=$row['name']?></a></td>
+        <td><?=$row['name']?></td>
         <td class="text-right"><?=number_format($row['price'], 0, ' ', ' ')?></td>
-        <td><?=$row['year']?></td>
-        <td><?=$row['date']?></td>
-        <td><a href="/avito/loadCard/<?=$row['url']?>">загрузить карточку</a></td>
-        <td><a href="/avito/loadPhone/<?=$row['url']?>">разобрать телефон</a></td>
+        <td><a href="/avito/loadPhone/<?=$row['link']?>">разобрать телефон</a></td>
     </tr>
     <?php
 }
@@ -116,16 +111,8 @@ foreach ($data as $k => $row) {
     <div class="col-md-6" id="results">
         <?php
         }
-        if(isset($data['views-total'])) {
-            echo '<pre>';
-            print_r($data);
-            echo '</pre>';
-        }
-
-        if(isset($data['phone_url'])) {
+        if(isset($data['image'])) {
             ?>
-            <p>URL:<?=$data['phone_url']?></p>
-
            <p><img src="<?=$data['image']?>" alt="" /></p>
             <?
                 if ($data['result']) {

@@ -1,5 +1,6 @@
 {
     "require": {
-        "imangazaliev/didom": "^1.18"
+        "imangazaliev/didom": "^1.18",
+        "thiagoalessio/tesseract_ocr": "^2.12"
     }
 }

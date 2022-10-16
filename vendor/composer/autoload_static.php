@@ -7,6 +7,10 @@ namespace Composer\Autoload;
 class ComposerStaticInit5b319d43b4ceb54dcfa4c145cda39f07
 {
     public static $prefixLengthsPsr4 = array (
+        't' => 
+        array (
+            'thiagoalessio\\TesseractOCR\\' => 27,
+        ),
         'D' => 
         array (
             'DiDom\\' => 6,
@@ -14,6 +18,10 @@ class ComposerStaticInit5b319d43b4ceb54dcfa4c145cda39f07
     );
 
     public static $prefixDirsPsr4 = array (
+        'thiagoalessio\\TesseractOCR\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/thiagoalessio/tesseract_ocr/src',
+        ),
         'DiDom\\' => 
         array (
             0 => __DIR__ . '/..' . '/imangazaliev/didom/src/DiDom',
