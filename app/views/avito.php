@@ -114,7 +114,7 @@ foreach ($data as $k => $row) {
         if(isset($data['image'])) {
             ?>
            <p><img src="<?=$data['image']?>" alt="" /></p>
-            <?
+            <?php
                 if ($data['result']) {
                     echo '<h2 class="text-success">Результат - '.$data['result'].'</h2>';
                 } else {
