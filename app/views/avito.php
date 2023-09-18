@@ -33,7 +33,7 @@ function POST($key, $default='')
 
     <h1>Парсер Авито</h1>
 
-    <form class="form-inline avito-form" action="/avito/parse" method="post">
+    <form class="form-inline avito-form" action="./avito/parse" method="post">
       <div class="form-group">
         <label><a href="<?=POST('url', 'https://www.avito.ru/syktyvkar/avtomobili?radius=200')?>" target="_blank">URL</a></label>
         <input type="text" class="form-control" name="url" value="<?=POST('url', 'https://www.avito.ru/syktyvkar/avtomobili?radius=200')?>" style="width:400px;">
